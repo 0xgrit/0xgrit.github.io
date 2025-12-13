@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on azazel</title>
+    <link>//localhost:1313/research/</link>
+    <description>Recent content in Researches on azazel</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Dec 2025 04:42:27 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE-2025-10767</title>
+      <link>//localhost:1313/research/cve-2025-10767/</link>
+      <pubDate>Fri, 05 Dec 2025 04:42:27 +0800</pubDate>
+      <guid>//localhost:1313/research/cve-2025-10767/</guid>
+      <description>What&amp;rsquo;s up? Lately I’ve been digging into vulnerability research - reading writeups and watching videos about adversarial toolkits that turned out to be vulnerable themselves. Shout-out to my friend Chebuya for the insights on this topic.&#xA;What made me delve into this topic? Most vulnerability researchers, hackers, and threat actors look for bugs in enterprise software, apps, and the like. But what if we look for vulnerabilities in the tools researchers use?</description>
+    </item>
+  </channel>
+</rss>

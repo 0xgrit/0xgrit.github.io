@@ -1,0 +1,42 @@
+{{ define "main" }}
+  {{/*
+    Categories taxonomy view.
+
+    Purpose:
+    - Group posts by category
+    - Show category name as a section header
+    - List posts in reverse chronological order
+
+    Intentionally:
+    - No global page title
+    - No introduction text
+    - No metadata beyond date
+  */}}
+
+  {{ $cats := .Site.Taxonomies.categories }}
+
+  {{ range $name, $pages := $cats }}
+    <section>
+      <!-- Category name -->
+      <h1>{{ $name }}</h1>
+
+      <!-- Posts under this category -->
+      <ul class="blogs">
+        {{ range sort $pages "Date" "desc" }}
+          <li class="blog-item">
+            <a href="{{ .RelPermalink }}" class="blog-link">
+              {{ .Title }}
+            </a>
+            <small>
+              <span class="blog-date">
+                [ {{ .Date.Format "2006-01-02" }} ]
+              </span>
+            </small>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+{{ end }}
+

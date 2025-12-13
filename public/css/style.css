@@ -1,0 +1,299 @@
+/* =========================
+   Global font
+========================= */
+:
+@font-face {
+  font-family: "Unifont";
+  src: url("/fonts/unifont.woff") format("woff");
+}
+
+
+/* =========================
+   Oxocarbon - Tokens
+========================= */
+:root {
+  /* Background */
+  --bg: #0d0911;
+  --fg: #ffffff;
+
+  /* Accent */
+  --purple: #be95ff;
+  --purple-soft: #e6ccff;  
+  --light-pink: #ff7eb6;
+  --light-pink-soft: #ff9fcb;
+  --blue: #33b1ff;
+  --blue-soft: #82cfff;
+  --pink: #ee5396;
+  --cyan: #08bdba;
+  --green: #42be65;
+  --muted-gray: #dde1e6;
+  --quote: #cfcfcf;
+
+}
+
+/* =========================
+   Global Base
+========================= */
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: var(--bg);
+  position: relative;
+  font-family: "Unifont", system-ui, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1em 0;
+  color: var(--fg);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/img/wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* =========================
+   Layout
+========================= */
+main,
+header {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+header {
+  display: grid;
+  place-items: center;
+}
+
+/* =========================
+   Banner / ASCII
+========================= */
+.banner {
+  white-space: pre;
+  font-weight: 700;
+}
+
+.ascii {
+  font-size: 0.15rem;
+  color: var(--purple);
+  line-height: 1;
+}
+
+/* =========================
+   Global link reset
+========================= */
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  color: inherit;
+  outline: none;
+}
+
+/* =========================
+   Menu
+========================= */
+#menu a {
+  color: var(--purple);
+  margin-right: 12px;
+}
+
+#menu a:hover,
+#menu a.active {
+  color: var(--purple-soft);
+}
+
+/* =========================
+   Typography
+========================= */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.8em 0;
+}
+
+strong {
+  color: var(--pink);
+}
+
+em,
+i {
+  color: var(green);
+}
+
+/* Links inside content */
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--blue-soft);
+}
+
+/* Inline code */
+code {
+  font-family: inherit;
+  font-size: 17px;
+}
+
+/* Code blocks */
+pre {
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =========================
+   Headings
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: -0.3em;
+}
+
+h1 { font-size: 1.25rem; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 1rem; }
+h4, h5, h6 { font-size: 0.95rem; }
+
+h1::before { content: "# "; color: var(--purple); }
+h2::before { content: "## "; color: var(--blue); }
+h3::before { content: "### "; color: var(--pink); }
+h4::before { content: "#### "; color: #78a9ff; }
+h5::before { content: "##### "; color: var(--cyan); }
+h6::before { content: "###### "; color: var(--blue-soft); }
+
+/* =========================
+   Arrows
+========================= */
+.arrow {
+  color: var(--fg);
+}
+
+a:hover .arrow {
+  color: var(--fg);
+}
+
+/* =========================
+   Quote
+========================= */
+.quote {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--quote);
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+.quote,
+.quote:hover {
+  color: var(--quote) !important;
+}
+
+/* =========================
+   Blog 
+========================= */
+
+.blog-date {
+  color: var(--muted-gray);
+  margin-left: 0.6rem;
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+/* =========================
+   Global list arrows
+========================= */ 
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+ul li::before {
+  content: "~>";
+  color: var(--muted-gray);
+  font-family: monospace;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 0.15em;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  position: relative;
+  margin-top: 3rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* =========================
+   Mobile (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0.75em 0.5em;
+    line-height: 1.7;
+  }
+
+  main,
+  header {
+    padding: 0 0.25rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  h1 { font-size: 1.35rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1.1rem; }
+
+  pre {
+    font-size: 0.85rem;
+    max-height: 50vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  code {
+    font-size: 0.9rem;
+  }
+
+  .ascii {
+    transform: scale(0.75);
+  }
+
+  footer {
+    margin-top: 2rem;
+    position: relative;
+  }
+}
+

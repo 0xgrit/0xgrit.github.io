@@ -1,0 +1,246 @@
+/* =========================
+   Oxocarbon Tokens
+========================= */
+:root {
+
+  /* Foreground */
+  --ox-fg:        #f2f4f8;
+  --ox-fg-muted:  #dde1e6;
+  --ox-fg-dim:    #a8a8a8;
+  --ox-comment:   #6e7681;
+
+  /* Accents */
+  --ox-purple:    #be95ff;
+  --ox-pink:      #ee5396;
+  --ox-pink-soft: #ff7eb6;
+  --ox-blue:      #33b1ff;
+  --ox-green:     #42be65;
+  --ox-teal:      #08bdba;
+
+  /* Alerts */
+  --ox-red:       #f85149;
+  --ox-red-bg:    #2a0f14;
+}
+
+/* =========================
+   Base
+========================= */
+.chroma {
+  color: var(--ox-fg);
+  background-color: transparent;
+}
+
+/* =========================
+   Scrollbars
+========================= */
+.chroma .lntable {
+  width: auto;
+  border: 0;
+  margin: 0;
+  display: block;
+  padding: 0;
+  border-spacing: 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.chroma {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.chroma pre {
+  overflow: visible;
+}
+
+/* =========================
+   Errors
+========================= */
+.chroma .err {
+  color: var(--ox-red);
+  background-color: var(--ox-red-bg);
+}
+
+/* =========================
+   Line Numbers
+========================= */
+.chroma .lnt,
+.chroma .ln {
+  color: var(--ox-comment);
+  padding: 0 0.4em;
+  font-size: 15px;
+  margin-right: 0.4em;
+}
+
+.chroma .hl {
+  width: 100%;
+  display: block;
+  background-color: var(--ox-hl);
+}
+
+/* =========================
+   Keywords
+========================= */
+.chroma .k,
+.chroma .kd,
+.chroma .kn,
+.chroma .kr {
+  color: var(--ox-purple);
+}
+
+.chroma .kp,
+.chroma .kt {
+  color: var(--ox-pink);
+}
+
+.chroma .kc {
+  color: var(--ox-green);
+}
+
+/* =========================
+   Names / Identifiers
+========================= */
+.chroma .n,
+.chroma .na,
+.chroma .nb,
+.chroma .ni,
+.chroma .nx,
+.chroma .py,
+.chroma .bp,
+.chroma .x {
+  color: var(--ox-fg);
+}
+
+.chroma .nc,
+.chroma .ne,
+.chroma .nn {
+  color: var(--ox-pink);
+  font-weight: bold;
+}
+
+.chroma .nd,
+.chroma .nf {
+  color: var(--ox-purple);
+}
+
+.chroma .nl {
+  color: var(--ox-green);
+  font-weight: bold;
+}
+
+/* =========================
+   Numbers
+========================= */
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .mo,
+.chroma .il {
+  color: var(--ox-purple);
+}
+
+/* =========================
+   Strings
+========================= */
+.chroma .s,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s1,
+.chroma .s2 {
+  color: var(--ox-pink-soft);
+}
+
+.chroma .se,
+.chroma .sh,
+.chroma .sr {
+  color: var(--ox-red);
+}
+
+.chroma .si {
+  color: var(--ox-green);
+}
+
+.chroma .sx {
+  color: var(--ox-purple);
+}
+
+.chroma .ss {
+  color: var(--ox-blue);
+}
+
+/* =========================
+   Operators & Punctuation
+========================= */
+.chroma .o,
+.chroma .ow {
+  color: var(--ox-pink);
+}
+
+.chroma .nt {
+  color: var(--ox-green);
+}
+
+.chroma .p {
+  color: var(--ox-fg-dim);
+}
+
+/* =========================
+   Constants & Variables
+========================= */
+.chroma .no,
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm {
+  color: var(--ox-green);
+}
+
+/* =========================
+   Comments & Whitespace
+========================= */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .go,
+.chroma .gp,
+.chroma .w {
+  color: var(--ox-comment);
+  font-style: italic;
+}
+
+/* =========================
+   Preprocessor / Special
+========================= */
+.chroma .cpf {
+  color: var(--ox-blue);
+  font-weight: bold;
+}
+
+/* =========================
+   Diff / Git
+========================= */
+.chroma .gd {
+  color: var(--ox-red);
+  background-color: #3a1116;
+}
+
+.chroma .gi {
+  color: var(--ox-green);
+  background-color: #0f2e1c;
+}
+
+.chroma .gr { color: var(--ox-red); }
+.chroma .gh,
+.chroma .gu { color: var(--ox-blue); font-weight: bold; }
+
+.chroma .gs { font-weight: bold; }
+.chroma .gt { color: var(--ox-pink); }
+.chroma .gl { text-decoration: underline; }
+

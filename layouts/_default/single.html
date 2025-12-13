@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{/*
+    Single content layout.
+
+    Responsibilities:
+    - Render page content
+    - Optionally render a title
+
+    Title behavior:
+    - Shown by default
+    - Suppressed when front matter sets: noTitle = true
+  */}}
+
+  <article>
+    {{ if not .Params.noTitle }}
+      <h2>{{ .Title }}</h2>
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+{{ end }}
+

@@ -1,0 +1,13 @@
+baseURL = 'rwx-azazel.xyz'
+languageCode = 'en-us'
+title = 'azazel'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    lineNumbersInTable = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
