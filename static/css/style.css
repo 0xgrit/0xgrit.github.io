@@ -278,6 +278,12 @@ footer {
     padding: 1em;
   }
 
+  main {
+    max-width: 36ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   ul li {
     align-items: flex-start;
   }
