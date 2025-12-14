@@ -52,38 +52,43 @@
   </head>
 
   <body>
-    <!-- =========================
-         Header
-    ========================== -->
-    <header>
-      <div class="banner">
-        {{ partial "banner.html" . }}
-      </div>
 
-      <!-- Philosophy / Tagline -->
-      <p class="quote">
-        Obsess over every detail. Ask why it works. Ask why it isn’t built another way.
-      </p>
 
-      <!-- Navigation -->
-      <nav id="menu">
-        <a href="{{ "/" }}"
-           class="{{ if .IsHome }}active{{ end }}">
-          <span class="arrow">»</span> home
-        </a>
 
-        <a href="{{ "research" | relURL }}"
-           class="{{ if eq .RelPermalink "/research/" }}active{{ end }}">
-          <span class="arrow">»</span> research
-        </a>
+<!-- =========================
+     Header
+========================== -->
+{{ if .IsHome }}
+  <header>
+    <div class="banner">
+      {{ partial "banner.html" . }}
+    </div>
 
-        <a href="{{ "about" | relURL }}"
-           class="{{ if eq .RelPermalink "/about/" }}active{{ end }}">
-          <span class="arrow">»</span> about
-        </a>
-      </nav>
-    </header>
+    <p class="quote">
+      Obsess over every detail. Ask why it works. Ask why it isn’t built another way.
+    </p>
+  </header>
+{{ else }}
+  <header>
+    <nav id="menu">
+      <a href="{{ "/" }}">
+        <span class="arrow">»</span> home
+      </a>
 
+      <a href="{{ "research" | relURL }}"
+         class="{{ if eq .RelPermalink "/research/" }}active{{ end }}">
+        <span class="arrow">»</span> research
+      </a>
+
+      <a href="{{ "about" | relURL }}"
+         class="{{ if eq .RelPermalink "/about/" }}active{{ end }}">
+        <span class="arrow">»</span> about
+      </a>
+    </nav>
+  </header>
+{{ end }}
+
+ 
     <!-- =========================
          Main Content
     ========================== -->
