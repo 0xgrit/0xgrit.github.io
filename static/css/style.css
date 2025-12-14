@@ -3,7 +3,7 @@
 ========================= */
 :
 @font-face {
-  font-family: "Unifont";
+  font-family: "Unifont", monospace;
   src: url("/fonts/unifont.woff") format("woff");
 }
 
@@ -82,8 +82,10 @@ header {
    Banner / ASCII
 ========================= */
 .banner {
+  white-space: pre;
   font-weight: 700;
   margin-bottom: 0.75rem;
+  overflow-x: auto;
 }
 
 .ascii {
