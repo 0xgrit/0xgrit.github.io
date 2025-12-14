@@ -180,7 +180,7 @@ pre {
 }
 
 .ascii {
-  font-family: var(--font-ascii);
+  font-family: var(--font-mono);
   font-size: 3px;
   line-height: 1;
   color: var(--purple);
@@ -272,12 +272,14 @@ footer {
 
   .banner {
     display: block;
+    margin-bottom: 0.75rem;
   }
 
   .ascii {
     font-family: var(--font-mono);
-    font-size: 3px;
+    font-size: 1.5px;
     line-height: 1;
+    color: var(--purple);
   }
 
   main {
