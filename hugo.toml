@@ -1,4 +1,6 @@
-baseURL = 'rwx-azazel.xyz'
+baseURL = 'https://jmp4zazel.github.io'
+relativeURLs = true 
+canonifyURLs = false
 languageCode = 'en-us'
 title = 'azazel'
 
