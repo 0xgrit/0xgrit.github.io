@@ -244,3 +244,8 @@
 .chroma .gt { color: var(--ox-pink); }
 .chroma .gl { text-decoration: underline; }
 
+@media (max-width: 768px) {
+.chromalnt {
+    font-size: 0.6rem;
+  }
+

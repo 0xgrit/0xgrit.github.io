@@ -268,10 +268,6 @@ footer {
     display: none;
   }
 
-  .lnt {
-    font-size: 0.6rem;
-  }
-
   main {
     max-width: var(--content-narrow);
   }
