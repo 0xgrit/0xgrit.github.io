@@ -1,4 +1,4 @@
 +++
 title: "research"
-description: "Research, experiments, and write-ups on exploits, malware techniques, and Windows internals."
+description: "offensive security r&d, and a bit of every domain.."
 +++
