@@ -258,6 +258,44 @@ a:hover .arrow {
 }
 
 /* =========================
+   Category Filter
+========================= */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0.8rem 0 1.2rem;
+  padding-left: 0.25rem;
+}
+
+.category-filter button {
+  all: unset;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
+
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 0.15rem 0.4rem;
+
+  color: var(--purple);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+
+  position: relative;
+}
+
+/* hover */
+.category-filter button:hover {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* =========================
    Footer
 ========================= */
 footer {
