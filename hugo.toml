@@ -1,4 +1,4 @@
-baseURL = 'https://jmp4zazel.github.io'
+baseURL = "https://jmp4zazel.github.io"
 relativeURLs = true 
 canonifyURLs = true
 languageCode = 'en-us'
