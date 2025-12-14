@@ -269,7 +269,6 @@ footer {
     pointer-events: none;
     z-index: -1;
     inset: 0;
-    background-size: cover;
     background-position: center top;
     opacity: var(--bg-overlay-opacity);
   }
