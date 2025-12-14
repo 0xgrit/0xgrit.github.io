@@ -71,6 +71,9 @@ header {
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 0.5rem;
+  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 header {
@@ -85,7 +88,6 @@ header {
   white-space: pre;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  overflow-x: auto;
 }
 
 .ascii {
