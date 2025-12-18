@@ -35,6 +35,8 @@ I didn’t get here on my own. Everything I’ve learned so far is the result of
 * @ghostwirez
 * @balejin
 * @0xA1ex
+* @dystortion
+* @jimididit
 * @texasmetalhead
 * @fr0j
 * @gatari
