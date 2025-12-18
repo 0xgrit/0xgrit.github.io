@@ -206,7 +206,7 @@ pre {
   font-family: var(--font-mono);
   font-size: 2.0px;
   line-height: 1;
-  color: var(--red);
+  color: var(--real-red);
 }
 
 .base-title::before {
