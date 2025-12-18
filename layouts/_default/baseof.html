@@ -8,40 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- =========================
-         Page Title (Context-Aware)
+         Page Title
     ========================== -->
     <title>
       {{ if .IsHome }}
         azazel
-      {{ else if .IsSection }}
-        {{ .Section }}
       {{ else }}
         {{ .Title }}
       {{ end }}
     </title>
 
-   <!-- =========================
+    <!-- =========================
          Favicon
     ========================== -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-   <!-- =========================
+    <!-- =========================
          Open Graph / Embed Metadata
     ========================== -->
     <meta property="og:type" content="website">
     <meta property="og:title"
           content="{{ if .IsHome }}azazel{{ else }}{{ .Title }}{{ end }}">
     <meta property="og:description"
-          content="{{ .Params.description | default .Site.Params.description }}">
+          content="{{ .Params.description | default .Site.Params.description | default "Research notes and technical writing." }}">
     <meta property="og:image"
           content="{{ .Params.ogImage | default .Site.Params.ogImage }}">
     <meta property="og:url" content="{{ .Permalink }}">
 
-    <!-- Optional: Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- =========================
@@ -56,10 +53,9 @@
          Header
     ========================== -->
     <header>
-     <div class="banner">
+      <div class="banner">
         {{ partial "banner.html" . }}
-      </div> 
-      <!-- <h1 class="base-title">azazel</h1> --!>
+      </div>
 
       <!-- Philosophy / Tagline -->
       <p class="quote">
@@ -76,6 +72,11 @@
         <a href="{{ "research" | relURL }}"
            class="{{ if eq .RelPermalink "/research/" }}active{{ end }}">
           <span class="arrow">»</span> research
+        </a>
+
+        <a href="{{ "tags" | relURL }}"
+           class="{{ if eq .Section "tags" }}active{{ end }}">
+          <span class="arrow">»</span> tags
         </a>
 
         <a href="{{ "about" | relURL }}"
@@ -100,4 +101,3 @@
     </footer>
   </body>
 </html>
-
