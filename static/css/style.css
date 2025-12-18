@@ -35,11 +35,11 @@
   --content-max: 60rem;
   --content-narrow: 60ch;
 
-  --pad-inline: 0.5rem;
+  --pad-inline: 0.9rem;
   --pad-body: 1em;
 
   /* Effects */
-  --bg-overlay-opacity: 0.10;
+  --bg-overlay-opacity: 0.25;
 }
 
 /* =========================
@@ -218,7 +218,7 @@ pre {
 ========================= */
 #menu a {
   color: var(--white);
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 #menu a:hover,
