@@ -145,7 +145,7 @@ h3 { font-size: 1rem; }
 h4, h5, h6 { font-size: 0.95rem; }
 
 h1::before {
-  content: "[1] ";
+  content: "-> ";
   color: var(--purple);
 }
 
