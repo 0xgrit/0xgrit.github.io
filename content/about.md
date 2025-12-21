@@ -39,6 +39,7 @@ I didn’t get here on my own. Everything I’ve learned so far is the result of
 * @jimididit
 * @texasmetalhead
 * @fr0j
+* @xrombar
 * @gatari
 * @codextf2
 * @0xdeluks
@@ -61,7 +62,6 @@ I didn’t get here on my own. Everything I’ve learned so far is the result of
 * @red.wind
 * @seiferia
 * @sysgerm
-* @xrombar
 * @3lle
 
 
