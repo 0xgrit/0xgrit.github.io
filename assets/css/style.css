@@ -357,6 +357,12 @@ footer {
     overflow-x: auto;
   }
 
+ img {
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+ }
+
   ul li {
     align-items: flex-start;
   }
