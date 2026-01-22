@@ -109,7 +109,7 @@ Then list out the power of 16 from right to left.
 ```
 
 so 16 to the power of 1 is 16, and if a number a power of 0 it is 1.
-
+```
 so it'll be 
 15  15
 16  1
