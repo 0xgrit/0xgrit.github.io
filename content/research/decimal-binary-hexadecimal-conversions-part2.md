@@ -1,6 +1,6 @@
 +++
 title = 'Decimal, Binary, and Hexadecimal conversion: Part 2'
-date = 2026-01-20
+date = 2026-01-21
 description = "Understanding decimal, binary, and hexadecimal conversions (Part 2)"
 tags = ["lowlevel"]
 +++
