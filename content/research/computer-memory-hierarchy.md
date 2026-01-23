@@ -48,8 +48,6 @@ If the expression is just **a + b**, the result stays in a register and may neve
 
 
 # So why does the CPU / assembly only operate on processor registers?
-So why does the CPU / assembly only operate on processor registers?
-
 Because registers are fast.
 
 If the CPU were to perform arithmetic directly on RAM, execution would be extremely slow. RAM is much slower than registers, and disk-based storage is even slower. The CPU needs data as close and as fast as possible in order to execute instructions efficiently.
