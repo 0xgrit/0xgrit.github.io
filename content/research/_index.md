@@ -1,4 +1,4 @@
 +++
 title = "grit · research"
-description = "azazel's silly research, experiments, and yap."
+description = "grit's silly research, experiments, and yap."
 +++
