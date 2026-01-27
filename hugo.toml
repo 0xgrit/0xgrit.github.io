@@ -2,6 +2,7 @@ baseURL = "https://grit8086.github.io"
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
+timeZone = "Asia/Manila"
 title = 'azazel'
 
 [markup]
