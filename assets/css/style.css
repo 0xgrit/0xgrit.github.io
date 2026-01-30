@@ -207,6 +207,7 @@ pre {
   font-weight: 700;
   margin-bottom: 0.75rem;
   overflow-x: hidden;
+  contain: layout paint;
 }
 
 .ascii {
@@ -329,6 +330,10 @@ footer {
   body {
     padding: 1em;
     max-width: 720px;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
 
   .banner {
