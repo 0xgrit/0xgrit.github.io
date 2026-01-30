@@ -5,7 +5,6 @@
   font-family: "Unifont";
   src: 
     url("../../static/fonts/unifont.woff2") format("woff2"), 
-    url("../../static/fonts/unifont.woff") format("woff");
   font-display: swap;
 }
 
@@ -75,33 +74,6 @@ body {
   padding-bottom: 10vh;
 }
 
-/* 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url("/img/wallpaper.png") center / contain no-repeat;
-  opacity: var(--bg-overlay-opacity);
-  pointer-events: none;
-  z-index: -1;
-}
-*/
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-/*  background-image: url('/img/wallpaper.png');*/
-  opacity: var(--bg-overlay-opacity);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  z-index: -1;
-  transform: translateZ(0);
-}
 
 /* =========================
    Layout
