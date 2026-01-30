@@ -206,6 +206,7 @@ pre {
   white-space: pre;
   font-weight: 700;
   margin-bottom: 0.75rem;
+  overflow-x: hidden;
 }
 
 .ascii {
@@ -322,7 +323,7 @@ footer {
   }
 
   html {
-    font-size: clamp(12px, 1.2vw, 14px);
+    font-size: 12px;
   }
 
   body {
@@ -358,7 +359,7 @@ footer {
 
   pre,
   code {
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 1.15;
     overflow-x: auto;
     max-width: 100%;
