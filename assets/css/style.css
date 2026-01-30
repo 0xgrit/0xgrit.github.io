@@ -1,9 +1,11 @@
- =========================
+/* =========================
    Font Face
 ========================= */
 @font-face {
   font-family: "Unifont";
-  src: url("../../static/fonts/unifont.woff") format("woff");
+  src: 
+    url("../../static/fonts/unifont.woff2") format("woff2"), 
+    url("../../static/fonts/unifont.woff") format("woff");
   font-display: swap;
 }
 
@@ -203,7 +205,8 @@ pre {
    ASCII / Banner
 ========================= */
 .banner {
-  white-space: pre;
+  white-mp(13px, 1.5vw, 14px);
+    }space: pre;
   font-weight: 700;
   margin-bottom: 0.75rem;
   overflow-x: hidden;
