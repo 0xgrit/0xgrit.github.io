@@ -80,9 +80,9 @@
           <span class="arrow">»</span> home
         </a>
 
-        <a href="{{ "research" | relURL }}"
-           class="{{ if eq .RelPermalink "/research/" }}active{{ end }}">
-          <span class="arrow">»</span> research
+        <a href="{{ "posts" | relURL }}"
+           class="{{ if eq .RelPermalink "posts/" }}active{{ end }}">
+          <span class="arrow">»</span> posts
         </a>
 
         <a href="{{ "tags" | relURL }}"
