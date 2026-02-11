@@ -247,7 +247,7 @@ int factorial(int n)
 
 Calling `factorial(5)` creates multiple stack frames:
 
-```
+```plaintext
 ┌──────────────────────┐
 │  factorial(1) frame  │
 ├──────────────────────┤
@@ -333,7 +333,7 @@ The stack might grow or shrink during execution depending on different code path
 
 Before calling `hello()`:
 
-```
+```plaintext
        ┌──────────────┐
        │              │
        ├──────────────┤
@@ -353,7 +353,7 @@ RBP →  ├──────────────┤
 
 After `push rbp` in `hello()`, RSP points to the saved RBP value:
 
-```
+```plaintext
        ┌──────────────┐
        │              │
 RSP →  ├──────────────┤
@@ -373,7 +373,7 @@ RBP →  ├──────────────┤
 
 RBP now points to the same location as RSP:
 
-```
+```plaintext
        ┌──────────────┐
        │              │
 RSP →  ├──────────────┤ ← RBP (new base pointer)
@@ -488,7 +488,7 @@ This single instruction performs two operations:
 
 ### Stack Before `leave`:
 
-```
+```plaintext
 RSP →  ┌──────────────┐
        │  Local vars  │
        │              │
@@ -501,7 +501,7 @@ RSP →  ┌──────────────┐
 
 ### Stack After `leave`:
 
-```
+```plaintext
        ┌──────────────┐
        │  (freed)     │
        │              │
@@ -540,7 +540,7 @@ After `ret`, execution continues at the instruction immediately after the `call`
 6. **Function epilogue** cleans up and returns to the caller
 
 ### Register Roles
-```
+```plaintext
 ┌──────────┬───────────────────────┬─────────────────────────────────────────────────┐
 │ Register │ Purpose               │ Behavior                                        │
 ├──────────┼───────────────────────┼─────────────────────────────────────────────────┤

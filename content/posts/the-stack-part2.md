@@ -401,7 +401,7 @@ These are accessing local variables on the stack. Let's learn how to calculate t
 Given a stack layout, how do you figure out the offset to reach a specific address?
 
 Example:
-```
+```plaintext
       HIGH ADDRESSES
             ↑
 ┌──────────────────────────┐
@@ -484,7 +484,7 @@ Slots  Bytes  Hexadecimal
 
 ## Practice Example
 
-```
+```plaintext
       HIGH ADDRESSES
             ↑
 ┌──────────────────────────┐
