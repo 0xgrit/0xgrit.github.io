@@ -190,8 +190,6 @@ jne wow1    ; IF 1 IS NOT EQUAL TO 2, jump to WOW1
 ```
 This is like: `if (1 != 2);`
 
----
-
 ```asm
 cmp 1, 2
 ```
@@ -201,7 +199,6 @@ jle wow2    ; IF 1 IS LESS THAN OR EQUAL TO 2, jump to WOW2 (signed, because "le
 ```
 This is like: `if (1 <= 2);`
 
----
 
 ```asm
 cmp 1, 2
