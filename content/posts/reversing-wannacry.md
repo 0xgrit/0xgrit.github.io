@@ -201,8 +201,7 @@ int32_t stage3()
 ```
 
 ## secondFunction() - dynamic resolving of WinAPI functions
-I'm going to rename them and also explain them 
-```
+```c
 int32_t secondFunction()
 
     // Retrieves a module handle for the specificied module, so we have a handle on kernel32.dll
