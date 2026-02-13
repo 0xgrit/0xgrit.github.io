@@ -3,7 +3,10 @@ I've been learning x86-64 assembly lately, and I wanted to apply my learning alr
 
 ## entrypoint
 before finding the entrypoint of the malware, we can tell that this malware is written in C/C++ by looking at the symbols where it's using functions like memcpy, strncpy, etc.
+
+
 <img width="320" height="627" alt="image" src="https://github.com/user-attachments/assets/387ba9cb-c554-413b-8090-b48bf1349954" />
+
 
 now looking at **_start**, looking at line **57** we can see here that it's calling to a function, so this is most likely the entrypoint I already renamed it to **main()**
 ```c
