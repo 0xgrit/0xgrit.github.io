@@ -19,35 +19,41 @@ now looking at **_start**, looking at line **57** we can see here that it's call
 
 Now, let's look at our **main()** function. I already renamed these variables, so you can understand it but I'm still going to explain these.
 ```c
-00408140    int32_t main()
+    int32_t main()
 
-00408155        void variableContainingURL
-00408155        char* AnotherVariableContainingURL
-00408155        char* VariableContainingURL
-00408155        VariableContainingURL, AnotherVariableContainingURL =
-00408155            __builtin_memcpy(dest: &variableContainingURL, 
-00408155            src: "
-00408155                http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com", 
-00408155            count: 56)
-00408157        *VariableContainingURL = *AnotherVariableContainingURL
-00408158        int32_t var_17
-00408158        __builtin_memset(dest: &var_17, ch: 0, count: 23)
-0040817b        int32_t hInternet = InternetOpenA(lpszAgent: nullptr, 
-0040817b            dwAccessType: 1, lpszProxy: nullptr, lpszProxyBypass: nullptr, 
-0040817b            dwFlags: 0)
-00408194        int32_t hInternet_1 = InternetOpenUrlA(hInternet, 
-00408194            lpszUrl: &variableContainingURL, lpszHeaders: nullptr, 
-00408194            dwHeadersLength: 0, dwFlags: 0x84000000, dwContext: 0)
-00408194        
-004081a5        if (hInternet_1 != 0)
-004081bc            InternetCloseHandle(hInternet)
-004081bf            InternetCloseHandle(hInternet: hInternet_1)
-004081c8            return 0
-004081c8        
-004081a7        InternetCloseHandle(hInternet)
-004081ab        InternetCloseHandle(hInternet: 0)
-004081ad        stage2()
-004081b9        return 0
+        void variableContainingURL
+        char* AnotherVariableContainingURL
+        char* VariableContainingURL
+
+        VariableContainingURL, AnotherVariableContainingURL =
+            __builtin_memcpy(dest: &variableContainingURL, 
+            src: "
+                http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com", 
+            count: 56)
+
+        *VariableContainingURL = *AnotherVariableContainingURL
+        int32_t var_17
+
+        __builtin_memset(dest: &var_17, ch: 0, count: 23)
+        int32_t hInternet = InternetOpenA(lpszAgent: nullptr, 
+            dwAccessType: 1, lpszProxy: nullptr, lpszProxyBypass: nullptr, 
+            dwFlags: 0)
+
+        int32_t hInternet_1 = InternetOpenUrlA(hInternet, 
+            lpszUrl: &variableContainingURL, lpszHeaders: nullptr, 
+            dwHeadersLength: 0, dwFlags: 0x84000000, dwContext: 0)
+        
+        if (hInternet_1 != 0)
+            InternetCloseHandle(hInternet)
+            InternetCloseHandle(hInternet: hInternet_1)
+            return 0
+        
+        InternetCloseHandle(hInternet)
+        InternetCloseHandle(hInternet: 0)
+
+        stage2()
+
+        return 0
 ```
 
 
